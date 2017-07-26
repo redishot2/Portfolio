@@ -5,7 +5,7 @@ My website portfolio code
 My portfolio site is currently under construction while I create it for the first time. 
 
 # Old Website
-(Old Portfolio)[http://natashamartinez.weebly.com/published-games.html]
+[Old Portfolio](http://natashamartinez.weebly.com/published-games.html)
 
 # New Website
-(New Portfolio)[http://natashamartinez.games/]
+[New Portfolio](http://natashamartinez.games/)
