@@ -9,3 +9,9 @@ My [old portfolio](http://natashamartinez.weebly.com/published-games.html) was a
 
 # New Website
 My [new Portfolio](http://natashamartinez.games/) is now proudly hosted and domain-controlled by me. It is made with HTML, CSS, JS, and Bootstrap 3.0. 
+
+# Templates
+In creating this project, I started out with a few bootstrap templates and modified them to fit my needs. This allowed me to get some fantastic design choices and quickly create my website. 
+* [Landing Page](https://startbootstrap.com/template-overviews/landing-page/)
+* [Portfolio Page](https://startbootstrap.com/template-overviews/4-col-portfolio/)
+* [Game Page](https://startbootstrap.com/template-overviews/portfolio-item/)
