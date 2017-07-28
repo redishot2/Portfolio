@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A video games portfolio">
+    <meta name="author" content="Natasha Martinez">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+		<link rel="icon" href="img/logo.png"
+    <title>Natasha Martinez</title>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="index.html">Natasha Martinez</a>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header" id="gameTitle"> </h1>
+                <h5 id="yearCreated"> </h5>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <img id="coverPhoto" class="img-responsive" src="http://placehold.it/750x500" alt="">
+            </div>
+
+            <div class="col-md-4">
+              <h3>Project Description</h3>
+              <h5 id="desc"> </h5>
+
+              </br>
+              </br>
+
+              <h3>-<a id="link" target="#_blank" href="#">Link to Official Game Site</a>-</h3>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <!-- Related Projects Row -->
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h3 class="page-header">Screenshots</h3>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img id="smallImg1" class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img id="smallImg2" class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img id="smallImg3" class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img id="smallImg4" class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+      </div>
+
+
+      	<a  name="contact"></a>
+          <div class="banner">
+
+              <div class="container">
+
+                  <div class="row">
+                      <div class="col-lg-6">
+                          <h2>Connect with Natasha:</h2>
+                      </div>
+                      <div class="col-lg-6">
+                          <ul class="list-inline banner-social-buttons">
+                              <li>
+                                  <a target="_blank" href="https://github.com/redishot2" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                              </li>
+                              <li>
+                                  <a target="_blank" href="https://www.linkedin.com/in/natasha-martinez-1264925a/" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                              </li>
+                              <li>
+                                  <a target="_blank" href="https://www.facebook.com/natashaEmartinez" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+
+              </div>
+              <!-- /.container -->
+
+          </div>
+          <!-- /.banner -->
+
+          <!-- Footer -->
+          <footer>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-12">
+                          <ul class="list-inline">
+                              <li>
+                                  <a href="index.html">Home</a>
+                              </li>
+                          </ul>
+                          <p class="copyright text-muted small">Copyright &copy; Natasha Martinez 2017. All Rights Reserved</p>
+                      </div>
+                  </div>
+              </div>
+          </footer>
+
+
+</body>
+
+<script>
+
+  window.onload = function() {
+
+    // Get the name of the game to load
+    var name = urlParam("name");
+
+    // Defaults
+    var imageNamePrefix = "";
+    var gameName = "";
+    var year = "";
+    var desc = "";
+    var websiteLink = "#";
+
+    // Figure out what images and texts to use
+    switch(name) {
+
+      case "ihaw":
+
+        imageNamePrefix = "ihaw";
+        gameName = "I Have a Word";
+        year = "2015";
+        desc = "A critical thinking game build to test your spelling. Build for iPhone. Written in Objective-C.</br></br>​I have a word in mind, can you guess it? It's a five letter word between FACET and FADED, what is it? Use your deductive reasoning skills to guess the mystery word!</br></br>Took the lead on this project in a team of two developers and four artists.";
+        websiteLink = "https://itunes.apple.com/us/app/i-have-word-deductive-reasoning/id1026075205?mt=8";
+        break;
+
+      case "farmville":
+
+        imageNamePrefix = "farmville";
+        gameName = "Farmville Harvest Swap";
+        year = "2015";
+        desc = "Released for mobile and web, this game features 2D and 3D graphics to create a fun match-three environment.</br></br>I created this game while interning at Zynga's San Diego studio office.</br></br>I worked on many small features such as audio, popups, requests and more. The largest feature I worked on was 'Goats and Grass.' This feature was a board blocker that unlocked after a certain player action occurred. Unfortunately, due to underestimating the scope of the feature, it was eventually redesigned to 'Bunnies and Carrots.'</br></br>Created with Unity/ Mono Development in C#.";
+        websiteLink = "https://zynga.com/games/farmville-harvest-swap";
+        break;
+
+      case "exotrex2":
+
+        imageNamePrefix = "exo2";
+        gameName = "Exotrex 2";
+        year = "2017";
+        desc = "Coming soon";
+        websiteLink = "#";
+        break;
+
+      case "exotrex":
+
+        imageNamePrefix = "exo1";
+        gameName = "Exotrex";
+        year = "2016";
+        desc = "The human race is on the brink of extinction. The leaders of Earth and the colonies on the Moon and Mars have given Dr. Gerald Burke, head of the Dig-It! Astronautics Corporation, the task of finding a new, habitable planet and saving humanity. Dr. Burke was chosen because of his innovative new fuel cell called B.E.A.K.E.R., or the Basic Element Analysis Kinetic Energy Reactor. This revolutionary system uses simple chemical reactions to fuel Dr. Burke’s state-of-the art space lab. With this remarkable system, a single astronaut will be able to travel indefinitely without a need to locate specific fuel resupply sources. Instead, the astronaut will be able to use available elements to create chemical reactions that power the ship.";
+        websiteLink = "http://dig-itgames.com/portfolio/exotrex-game-grade6/";
+        break;
+
+      case "loot_pursuit_early_america":
+
+        imageNamePrefix = "lootPursuitEarlyAmerica";
+        gameName = "Loot Pursuit: Early America";
+        year = "2016";
+        desc = "Defend history by fighting off looters who are attempting to steal valuable artifacts from Jamestown archeological sites. Archeologists have so far found weapons, tools and even ear pickers but who knows what else they will miss if the looters get their way? You have a very important task to preserve the culture of the English settlement and learn the story of how they survived and interacted with native Powhatans in their early years.</br></br>Aligning with Common Core State Standards for 4th, 5th, and 6th grade, this easy to use game will help players sharpen their Number and Operations skills all while immersed in the history of Jamestown, Virginia.</br></br>Created with Phaser framework and Javascript.";
+        websiteLink = "https://dig-itgames.com/portfolio/jamestown-history-game-usa/";
+        break;
+
+      case "loot_pursuit_maya":
+
+        imageNamePrefix = "lootPursuitMaya";
+        gameName = "Loot Pursuit: Maya";
+        year = "2016";
+        desc = "Tulum’s Preservation Board has been warned of an upcoming robbery by a notorious gang of looters and wants to hire you to excavate the site’s irreplaceable artifacts before these malicious thieves pillage the ruins. To ask such a thing of an amateur archaeologist and mathematician is unheard of, but these are desperate times and history itself needs your help!</br></br>Taking a unique approach to teaching history and math, Loot Pursuit: Maya was designed from an archaeological point of view. Players learn by discovery! Aligning with Common Core State Standards for 4th, 5th, and 6th grade, this easy to use game will help players sharpen their Number and Operations skills all while immersed in a new culture.</br></br>Created with Phaser framework and Javascript.";
+        websiteLink = "https://dig-itgames.com/downloads/loot-pursuit-maya/";
+        break;
+
+      case "letter_factory":
+
+        imageNamePrefix = "letterFactory";
+        gameName = "Letter Factory (French)";
+        year = "2014";
+        desc = "An educational game I made while interning at 1st Playable Productions. Made for all Leapfrog platforms. Written in C++ in Linux.</br></br>I worked on translating the original game Letter Factory to French which included localization support and extra tweaks to games to account for the new language.";
+        websiteLink = "http://www.leapfrog.com/en-us/store/p/letter-factory/_/A-prod32019";
+        break;
+
+      case "leap_band":
+
+        imageNamePrefix = "leapband";
+        gameName = "Petathalon Games";
+        year = "2014";
+        desc = "Created during my internship at 1st Playable. Written in C++ in Linux for the new LeapBand and all standard Leapfrog platforms.</br></br>The LeapBand is a new type of platform. It is a wearable watch designed to promote healthy lifestyles in children. The watch contains a pedometer which records how active the wearer is. Points are awarded which then can be used to unlock pet companions.</br></br>This device also comes with a free download for Petathalon Games. Petathalon games is a companion app with 4 small mini games that allow the player to use their active pet from the watch and play in competitive and active games, such as running, archery and javelin.";
+        websiteLink = "http://www.leapfrog.com/en-us/store/p/leapband/_/A-prod19263";
+        break;
+
+      case "tiger_counts":
+
+        imageNamePrefix = "tiger";
+        gameName = "Tiger Counts";
+        year = "2014";
+        desc = "An educational game I made while interning at 1st Playable Productions. Made for all Leapfrog platforms. Written in C++ in Linux.</br></br>Working from beginning to end, I worked in a team of 7. 2 of which were programmers.</br></br>I worked on the HUD (the minigame select screens, pictured left), audio, and assorted other parts.";
+        websiteLink = "http://www.leapfrog.com/en-us/app-center/p/learning-friends-preschool-adventures-tiger-counts/_/A-prod59804-96914";
+        break;
+
+      case "mrs_giraffe":
+
+        imageNamePrefix = "giraffe";
+        gameName = "Mrs. Giraffe Explores";
+        year = "2014";
+        desc = "An educational game I made while interning at 1st Playable Productions. Made for all Leapfrog platforms. Written in C++ in Linux.</br></br>Working from beginning to end, I worked in a team of 7. 2 of which were programmers.</br></br>I worked on the HUD, Identify Insects minigame, Matching Pictures minigame, audio, and assorted other parts.";
+        websiteLink = "http://www.leapfrog.com/en-us/app-center/p/learning-friends-preschool-adventures-ms-giraffe-explores/_/A-prod59805-96914";
+        break;
+
+      case "monkey_draws":
+
+        imageNamePrefix = "monkey";
+        gameName = "Monkey Draws";
+        year = "2014";
+        desc = "An educational game I made while interning at 1st Playable Productions. Made for all Leapfrog platforms. Written in C++ in Linux.</br></br>Working from beginning to end, I worked in a team of 7. 2 of which were programmers.</br></br>I worked on the HUD, Garden Game minigame, audio, and assorted other parts.";
+        websiteLink = "http://www.leapfrog.com/en-us/app-center/p/learning-friends-preschool-adventures-monkey-creates/_/A-prod59807-96914";
+        break;
+
+      case "turtle_beach":
+
+        imageNamePrefix = "tutle";
+        gameName = "Turtle's ABC's";
+        year = "2014";
+        desc = "An educational game I made while interning at 1st Playable Productions. Made for all Leapfrog platforms. Written in C++ in Linux.</br></br>Working from beginning to end, I worked in a team of 7, 2 of which were programmers.</br></br>I worked on the HUD, Tide Pool minigame, audio, and assorted other parts.";
+        websiteLink = "http://www.leapfrog.com/en-us/app-center/p/learning-friends-preschool-adventures-turtles-abcs/_/A-prod59806-96914";
+        break;
+
+      default:
+        console.log("Didn't work?");
+    }
+
+    // Update the images and text forms
+    document.getElementById("gameTitle").innerHTML = gameName;
+    document.getElementById("yearCreated").innerHTML = year;
+    document.getElementById("desc").innerHTML = desc;
+    document.getElementById("link").href = websiteLink;
+
+    document.getElementById("coverPhoto").src = "img/games/"+imageNamePrefix+".jpg";
+    document.getElementById("smallImg1").src  = "img/games/"+imageNamePrefix+"/1.jpg";
+    document.getElementById("smallImg2").src  = "img/games/"+imageNamePrefix+"/2.jpg";
+    document.getElementById("smallImg3").src  = "img/games/"+imageNamePrefix+"/3.jpg";
+    document.getElementById("smallImg4").src  = "img/games/"+imageNamePrefix+"/4.jpg";
+  }
+
+  var urlParam = function(name, w) {
+    w = w || window;
+    var rx = new RegExp('[\&|\?]'+name+'=([^\&\#]+)'), val = w.location.search.match(rx);
+
+    return (!val) ? '' : val[1];
+  }
+
+</script>
+
+</html>
