@@ -144,7 +144,7 @@
                                   <a target="_blank" href="https://www.linkedin.com/in/natasha-martinez-1264925a/" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
                               </li>
                               <li>
-                                  <a target="_blank" href="https://www.facebook.com/natashaEmartinez" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                                  <a target="_blank" href="https://keybase.io/redishot2" class="btn btn-default btn-lg"><img src="img/keybase.png"> <span class="network-name"> Keybase</span></a>
                               </li>
                           </ul>
                       </div>
@@ -188,6 +188,7 @@
     var year = "";
     var desc = "";
     var websiteLink = "#";
+    var websiteLinkTitle = "Official Game Site";
 
     // Figure out what images and texts to use
     switch(name) {
@@ -215,8 +216,8 @@
         imageNamePrefix = "exo2";
         gameName = "Exotrex 2";
         year = "2017";
-        desc = "Coming soon";
-        websiteLink = "#";
+        desc = "Exotrex 2 is a beautifully rendered, STEM focused game that will challenge and engage 8-10th grade science students.</br></br>Sequel to <a href='game.html?name=exotrex'>Exotrex</a>.</br></br>Created in Javascript using <a href='https://phaser.io/'>Phaser</a>.";
+        websiteLink = "https://dig-itgames.com/portfolio/exotrex2-science-planetary_game/";
         break;
 
       case "exotrex":
@@ -224,7 +225,7 @@
         imageNamePrefix = "exo1";
         gameName = "Exotrex";
         year = "2016";
-        desc = "The human race is on the brink of extinction. The leaders of Earth and the colonies on the Moon and Mars have given Dr. Gerald Burke, head of the Dig-It! Astronautics Corporation, the task of finding a new, habitable planet and saving humanity. Dr. Burke was chosen because of his innovative new fuel cell called B.E.A.K.E.R., or the Basic Element Analysis Kinetic Energy Reactor. This revolutionary system uses simple chemical reactions to fuel Dr. Burke’s state-of-the art space lab. With this remarkable system, a single astronaut will be able to travel indefinitely without a need to locate specific fuel resupply sources. Instead, the astronaut will be able to use available elements to create chemical reactions that power the ship.";
+        desc = "The human race is on the brink of extinction. The leaders of Earth and the colonies on the Moon and Mars have given Dr. Gerald Burke, head of the Dig-It! Astronautics Corporation, the task of finding a new, habitable planet and saving humanity. Dr. Burke was chosen because of his innovative new fuel cell called B.E.A.K.E.R., or the Basic Element Analysis Kinetic Energy Reactor.</br></br>Prequel to <a href='game.html?name=exotrex2'>Exotrex 2</a>.</br></br>Created in Javascript using <a href='https://phaser.io/'>Phaser</a>";
         websiteLink = "http://dig-itgames.com/portfolio/exotrex-game-grade6/";
         break;
 
@@ -300,16 +301,28 @@
         websiteLink = "http://www.leapfrog.com/en-us/app-center/p/learning-friends-preschool-adventures-turtles-abcs/_/A-prod59806-96914";
         break;
 
+      case "portfolio":
+
+        imageNamePrefix = "portfolio";
+        gameName = "Portfolio Site";
+        year = "2017";
+        desc = "For many years, my portfolio lived on <a href='https://www.weebly.com/'>Weebly</a> and was maintained using their free and simple drag and drop system. While it was simple and clean, the website was not a good portfolio piece itself as I did not code myself.</br></br>I finally chose to create my own website using some simple templates from <a href='https://startbootstrap.com/'>Start Bootstrap</a>. Utilizing Bootstrap, every page has custom layouts that scale easily between extra large monitors and small mobile phones.</br></br>All of the art assets were made using <a href='https://www.sketchapp.com/'>Sketch App</a>, a light-wieght design mockup and asset creator.";
+        websiteLink = "https://github.com/redishot2/Portfolio";
+        websiteLinkTitle = "GitHub Repo";
+        break;
+
       default:
         console.log("Didn't work?");
     }
 
-    // Update the images and text forms
-    document.getElementById("gameTitle").innerHTML = gameName;
+    // Update the text forms
+    document.getElementById("gameTitle").innerHTML   = gameName;
     document.getElementById("yearCreated").innerHTML = year;
-    document.getElementById("desc").innerHTML = desc;
-    document.getElementById("link").href = websiteLink;
+    document.getElementById("desc").innerHTML        = desc;
+    document.getElementById("link").href             = websiteLink;
+    document.getElementById("link").innerHTML        = websiteLinkTitle;
 
+    // Update the images
     document.getElementById("coverPhoto").src = "img/games/"+imageNamePrefix+".jpg";
     document.getElementById("smallImg1").src  = "img/games/"+imageNamePrefix+"/1.jpg";
     document.getElementById("smallImg2").src  = "img/games/"+imageNamePrefix+"/2.jpg";
@@ -317,6 +330,7 @@
     document.getElementById("smallImg4").src  = "img/games/"+imageNamePrefix+"/4.jpg";
   }
 
+  // Gets the parameter, name, from the url
   var urlParam = function(name, w) {
     w = w || window;
     var rx = new RegExp('[\&|\?]'+name+'=([^\&\#]+)'), val = w.location.search.match(rx);
